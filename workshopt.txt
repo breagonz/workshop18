@@ -1,0 +1,36 @@
+// read the prompt 
+// identify the expections
+// write specifications 
+
+----- UNIT TESTS -----
+
+1. A function called "multiplication" that returns the product of the two input numbers.
+
+  expect multiplication(5,1) to be a number
+  expect multiplication('c', 7) to be an error
+  expect multiplication(5,1) to be 5
+
+2. A function called "concatOdds" takes two arrays of integers as arguments. It should 
+  return a single array that only contains the odd numbers, in ascending order, from 
+  both of the arrays.
+
+  expect concatOdds ([1,2,3] , [-1,-2,-3,-3,3,5,9 ]) to be [-1,-3,,1,3,5,9]
+  expect concatOdds (["hello", "world"], [1,3,4,5,8,9,]) to be [1,3,5,9]
+  expect concatOdds ([2,4,6,8], [10,12,14,16]) should result in error  
+
+----- FUNCTIONAL TESTS -----
+
+1. A shopping cart checkout feature that allows a user to check out as a guest 
+  (without an account), or as a logged-in user. They should be allowed to do either, 
+  but should be asked if they want to create an account or log in if they check out 
+  as a guest.
+
+ - users should be able to add items to their cart 
+ - if cart is empty a 'your cart is empty' text should appear along with a hyperlink back 
+  to the home page that says 'continue shopping' 
+ - at each step of check out the user should enter their correect info (address, payment, confirm)
+ - when ready to check out 'sign in' option comes up to save users from inputting their 
+  shipping and payment options saved
+ - there should be a 'sign up' option to have new users information saved for next time
+ - 'guest' option is also an option for those not intrested in having their information
+    saved for next time
